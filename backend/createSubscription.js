@@ -1,5 +1,8 @@
 const {generateOAuthToken} = require('./generateOAuthToken');
 // let OAuthToken = generateOAuthToken();
+generateOAuthToken();
+
+// above two lines code step by step & replace headers.Authorization with new OAuthToken
 
 function createSubscription() {
   var data = JSON.stringify({});
@@ -10,7 +13,7 @@ function createSubscription() {
     headers: { 
       'Accept': 'application/json', 
       'Content-Type': 'application/json', 
-      'Authorization': 'Bearer EwQkjBQgvALUtyTZqXcmkIhuAlBu'
+      'Authorization': 'Bearer LC1kKMMBLYqWXspisOAKVJYqDhBg'
     },
     data : data
   };
@@ -18,10 +21,11 @@ function createSubscription() {
   axios(config)
   .then(function (response) {
     console.log(JSON.stringify(response.data));
+    console.log(config.headers.Authorization)
   })
   .catch(function (error) {
     console.log(error);
   });
 }
 
-createSubscription();
+module.exports = { createSubscription };

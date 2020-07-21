@@ -36,15 +36,15 @@ function sendSMSCode() {
   const { username, sendCodeButton, usernameField } = signUp;
   sendCodeButton.addEventListener('click', () => {
     // signUp.username = usernameField.Value;
-    sendCodeToPhone();
-    // generateRandomCode();
-    // if(checkUser()) {
-    //   if(checkPhoneNumber()){
-    //     checkPhoneNumberZero();
-    //     alert(`this code:${signUp.securityCode} had been sent to your phone:${signUp.phone}`);
-    //     sendCodeToPhone();
-    //   }
-    // }
+    // sendCodeToPhone();
+    generateRandomCode();
+    if(checkUser()) {
+      if(checkPhoneNumber()){
+        checkPhoneNumberZero();
+        alert(`this code:${signUp.securityCode} had been sent to your phone:${signUp.phone}`);
+        sendCodeToPhone();
+      }
+    }
   })
 }
 sendSMSCode();

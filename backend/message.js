@@ -1,3 +1,8 @@
+const { generateOAuthToken } = require('./generateOAuthToken');
+generateOAuthToken();
+//Run createSubcription.js & above two lines code step by step & replace headers.Authorization with new OAuthToken.
+
+
 function sendCodeToPhone() {
   var axios = require('axios');
   var data = JSON.stringify({"to":["+61450147001"],"body":"WenpeiZ's new message from vsCode","from":"Wenpei Z","validity":5,"scheduledDelivery":1,"notifyURL":"https://www.example.com/","replyRequest":false,"priority":false,"receiptOff":true});
@@ -7,7 +12,7 @@ function sendCodeToPhone() {
     headers: { 
       'Accept': 'application/json', 
       'Content-Type': 'application/json', 
-      'Authorization': 'Bearer EwQkjBQgvALUtyTZqXcmkIhuAlBu'
+      'Authorization': 'Bearer 5bOtmOPQIQfZFS28nvcujG84iXbS'
     },
     data : data
   };
@@ -20,5 +25,7 @@ function sendCodeToPhone() {
     console.log(error);
   });
 }
+
+sendCodeToPhone();
 
 module.exports = { sendCodeToPhone };

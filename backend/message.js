@@ -5,7 +5,7 @@ generateOAuthToken();
 
 function sendCodeToPhone() {
   var axios = require('axios');
-  var data = JSON.stringify({"to":["+61450147001"],"body":"WenpeiZ's new message from vsCode","from":"Wenpei Z","validity":5,"scheduledDelivery":1,"notifyURL":"https://www.example.com/","replyRequest":false,"priority":false,"receiptOff":true});
+  var data = JSON.stringify({"to":["+61450147001"],"body":"2020/07/21","from":"Wenpei Z","validity":5,"scheduledDelivery":1,"notifyURL":"https://www.example.com/","replyRequest":false,"priority":false,"receiptOff":true});
   var config = {
     method: 'post',
     url: 'https://tapi.telstra.com/v2/messages/sms',
@@ -25,7 +25,5 @@ function sendCodeToPhone() {
     console.log(error);
   });
 }
-
-sendCodeToPhone();
 
 module.exports = { sendCodeToPhone };

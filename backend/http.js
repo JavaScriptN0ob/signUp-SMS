@@ -7,7 +7,8 @@ const server = http.createServer((req, res) => {
   // res.write('message had been sent!');
   // res.end();
   // generateOAuthToken();
-  if(req.uel === '/sendMessage') {
+  // sendCodeToPhone();
+  if(req.url === '/sendMessage') {
     sendCodeToPhone();
   }
 })

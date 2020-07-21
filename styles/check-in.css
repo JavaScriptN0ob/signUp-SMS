@@ -1,0 +1,66 @@
+.sign-up__container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.sign-up__wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+}
+
+.sign-up__wrapper > form {
+  display: flex;
+  flex-direction: row;
+}
+
+.sign-up__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up__label > label {
+  text-align: end;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  margin-top: 10px;
+}
+
+.sign-up__input {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.sign-up__input > input {
+  margin-top: 10px;
+  line-height: 1.15rem;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+.sign-up__button-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up__button-wrapper > button {
+  width: 100px;
+  margin-top: 30px;
+}
+
+.sign-up__button-wrapper > button:nth-child(2) {
+  margin-left: 15px;
+}

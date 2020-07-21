@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wenpei Z Sign-up Form</title>
+  <link rel="stylesheet" href="./styles/check-in.css">
+</head>
+<body>
+  <main class="sign-up__container">
+    <div class="sign-up__wrapper">
+      <form action="">
+        <div class="sign-up__label">
+          <label for="username">UserName:</label>
+          <label for="email">Email:</label>
+          <label for="password-first">Enter your password:</label>
+          <label for="password-second">Repeat your password:</label>
+          <label for="phone-number">Enter your number:</label>
+          <label for="sms-code">security code(by SMS):</label>
+        </div>
+        <div class="sign-up__input">
+          <input id="username" type="text" placeholder="username"/>
+          <input id="email" type="email" placeholder="example@gmail.coom"/>
+          <input id="password-first" type="password"/>
+          <input id="password-second" type="password"/>
+          <input id="phone-number" type="number" placeholder="0456 789 123"/>
+          <input id="sms-code" type="number"/>
+        </div>
+      </form>
+      <div class="sign-up__button-wrapper">
+        <button class="sign-up__code" type="button">Send code</button>
+        <button class="sign-up__button" type="button">SignUp</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <script src="./scripts/check-in.js"></script>
+  </footer>
+</body>
+</html>
